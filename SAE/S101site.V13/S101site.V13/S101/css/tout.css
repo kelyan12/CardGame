@@ -1,0 +1,148 @@
+/* applique un soulignement aux titres de taille h2 */
+h2 {
+  text-decoration: underline;
+}
+
+/* définit le style des liens : bloc en ligne avec espace intérieur, couleur de fond noire, bordure en pointillés, couleur de texte blanche, et curseur de pointeur */
+a {
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: white;
+  cursor: pointer;
+}
+
+/* désactive l'ombre du texte lors de la sélection de texte */
+::selection {
+  text-shadow: none;
+}
+
+/* ajoute un pseudo-élément après le corps de la page, couvrant toute la vue, sans interaction possible */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+/* style spécifique pour l'élément avec l'ID Block2 */
+#Block2 {
+  position: absolute;
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: rgb(255, 255, 255);
+}
+
+/* change la luminosité des liens au survol  */
+a:hover {
+  filter: brightness(0.8);
+}
+
+/* style spécifique pour les liens dans l'élément avec l'ID pageAcc pointant vers "../index.html" */
+#pageAc a[href="../index.html"] {
+  position: absolute;
+  color: rgb(255, 9, 9);
+  left: 30px;
+}
+
+/* style spécifique pour les titres de taille h1 */
+h1 {
+  position: absolute;
+  left: 1150px;
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: rgb(208, 241, 21);
+}
+
+/* supprime la marge par défaut pour les éléments pre */
+pre {
+  margin: 0;
+}
+
+/* définit la couleur de texte, la police et l'ombre du texte pour p, h1 et h2 */
+p, h1, h2 {
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+}
+
+/* style spécifique pour les liens dans l'élément avec l'iD page1 pointant vers  "../page1/page1.html" */
+#page1 a[href="../page1/page1.html"] {
+  position: absolute;
+  left: 30px;
+}
+
+/* définit le style des éléments span */
+span {
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: white;
+  cursor: pointer;
+}
+
+/* change la luminosité des éléments span au survol */
+span:hover {
+  filter: brightness(0.8);
+}
+
+/* style spécifique pour les liens dans l'élément avec l'ID page2 pointant vers "../page2/page2.html" */
+#page2 a[href="../page2/page2.html"] {
+  position: absolute;
+  left: 30px;
+}
+
+/* style spécifique pour les liens dans l'élément avec l'ID page3 pointant vers "../page3/page3.html" */
+#page3 a[href="../page3/page3.html"] {
+  position: absolute;
+  left: 30px;
+}
+
+/* ajoute une transition à la couleur de bordure des liens dans les div au survol */
+div a[href]:hover {
+    transition: border-color 1.5s ease;
+    border-color: yellow;
+}
+
+/* applique une animation de rebondissement aux divs qui n'ont pas de liens directs */
+div:not(:has(> a[href])) {
+  animation: bounce 1s ease-in-out;
+}
+
+/* définit l'animation de rebondissement */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+} 
+
+/* style de base pour le corps de la page */
+body {
+  position: relative;
+  background-color: black;
+  background-image: radial-gradient(rgba(16, 59, 16, 0.75), black 120%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  text-shadow: rgb(200, 200, 200) 0px 0px 5px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 2rem;
+  font: 1.3rem Inconsolata, monospace;
+}

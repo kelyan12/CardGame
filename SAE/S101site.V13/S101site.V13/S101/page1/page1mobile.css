@@ -1,0 +1,41 @@
+@media (max-width: 640px) {
+	* {
+        /* style spécifique pour l'élément avec l'ID Block1 : position absolue, bloc en ligne avec marge interne, couleur de fond noire, bordure en pointillés, couleur de texte blanche, largeur et hauteur définies */
+    #Block1 {
+    left: 150px;
+    top: 300px;
+    width: 800px;
+    height: 600px;
+    padding: 80px;
+  }
+  
+  /* style spécifique pour l'élément avec l'ID Block2 : position absolue, bloc en ligne avec marge interne, couleur de fond noire, bordure en pointillés, couleur de texte blanche, largeur et hauteur plus grandes */
+  #Block2 {
+    left: 150px;
+    top: 1005px;
+    width: 800px;
+    height: 550px;
+    padding: 30px;
+  }
+  
+  /* style spécifique pour l'élément avec l'ID Block3 : position absolue, bloc en ligne avec marge interne, couleur de fond noire, bordure en pointillés, couleur de texte blanche, grande largeur et hauteur moyenne */
+  #Block3 {
+    left: 150px;
+    top: 1600px;
+    width: 1000px;
+    height: 350px;
+  }
+
+  /* style spécifique pour les liens dans l'élément avec l'ID page2 pointant vers "../page2/page2.html" : position absolue, couleur et position définies */
+  #page2 a[href="../page2/page2.html"] {
+    top: 155px;
+    left: 30px;
+  }
+  
+  /* style spécifique pour les liens dans l'élément avec l'ID page3 pointant vers "../page3/page3.html" : position absolue, couleur et position définies */
+  #page3 a[href="../page3/page3.html"] {
+    top: 2025px;
+    left: 30px;
+  }
+}
+}

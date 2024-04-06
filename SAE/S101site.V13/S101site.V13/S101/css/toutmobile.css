@@ -1,0 +1,15 @@
+@media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+			/* passer body (et tous les éléments de largeur fixe) en largeur automatique */
+
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+		background-size: 400% 400%;
+	}
+
+}
+}
+	

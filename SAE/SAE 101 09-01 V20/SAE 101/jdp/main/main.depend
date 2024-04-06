@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1695632880 source:/home/sk305769/Documents/S1.01/main/main.c
+	<stdio.h>
+	<stdlib.h>
+	<ncurses.h>
+

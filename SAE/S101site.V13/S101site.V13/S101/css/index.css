@@ -1,0 +1,208 @@
+/* applique hauteur de 100% à balise html et au corps de page */
+html, body {
+  height: 100%;
+}
+
+/* définit couleur, police et ombre du texte pour paragraphes et titres h2 */
+p, h2 {
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+}
+
+/* positionne titre1 de façon absolue, détermine sa position et souligne texte */
+#titre1 {
+position: absolute;
+top: 150px;
+text-decoration: underline;
+}
+
+/* souligne texte du titre2 */
+#titre2 {
+text-decoration: underline;
+}
+
+/* positionne Block1 de façon absolue, définit son style, couleur, position et bordure */
+#Block1 {
+  position: absolute;
+  display: inline-block;
+  top: 200px;
+  left: 1200px;
+  width: 600px;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: white;
+}
+
+/* définit fond, taille, répétition du fond, hauteur, marge, overflow, padding, couleur, police et ombre du texte du corps de page */
+body {
+  background-image: url('../imgindex/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+  position: relative;
+}
+
+/* définit effet de fond après corps de page */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+  );
+  pointer-events: none;
+}
+
+/* définit style de sélection de texte */
+::selection {
+  background: #ffffff;
+  text-shadow: none;
+}
+
+/* supprime marge pour élément pre */
+pre {
+  margin: 0;
+}
+
+/* définit style, position, fond, bordure, couleur et curseur pour liens */
+a {
+  top: 10px;
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: white;
+  cursor: pointer;
+}
+
+/* modifie luminosité des liens au survol */
+a:hover {
+  filter: brightness(0.8);
+}
+
+/* définit style, fond, bordure, couleur et curseur pour éléments span */
+span {
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: white;
+  cursor: pointer;
+}
+
+/* modifie luminosité des éléments span au survol */
+span:hover {
+  filter: brightness(0.8);
+}
+
+/* définit position, taille, bordure et animations pour images de classe imgTitre */
+.imgTitre {
+position: absolute;
+top: 30px;
+width: 650px;
+border: 2px solid rgb(255, 255, 255);
+border-style: dashed;
+animation: moveGaucheDroite 15s infinite alternate, animateBorder 2.5s linear infinite;
+}
+
+/* crée animation pour déplacer de gauche à droite */
+@keyframes moveGaucheDroite {
+from {
+  left: 0;
+}
+to {
+  left: 100%;
+  transform: translateX(-100%);
+}
+}
+
+/* crée animation pour changer couleur de bordure */
+@keyframes animateBorder {
+0%, 100% {
+  border-color: yellow transparent transparent transparent;
+}
+25% {
+  border-color: transparent yellow transparent transparent;
+}
+50% {
+  border-color: transparent transparent yellow transparent;
+}
+75% {
+  border-color: transparent transparent transparent yellow;
+}
+}
+
+/* définit position d'une image spécifique */
+img[src="imgindex/imagejeu.png"] {
+position: absolute;
+top: 190px;
+left: 550px;
+}
+
+/* positionne liens de page1 */
+#page1 a[href="page1/page1.html"] {
+position: absolute;
+top: 250px;
+left: 30px;
+}
+
+/* positionne liens de page2 */
+#page2 a[href="page2/page2.html"] {
+position: absolute;
+top: 380px;
+left: 30px;
+}
+
+/* positionne liens de page3 */
+#page3 a[href="page3/page3.html"] {
+position: absolute;
+top: 515px;
+left: 30px;
+}
+
+/* définit style, position et interactions pour texte cliquable */
+.clickable-text {
+position: absolute;
+top: 650px;
+cursor: pointer;
+user-select: none;
+transition: color 0.3s;
+}
+
+/* change couleur du texte cliquable lorsqu'il est activé */
+.clickable-text:active {
+color: rgb(255, 30, 0);
+}
+
+/* définit style et position de l'élément output */
+#output {
+position: absolute;
+top: 720px;
+margin-top: 20px;
+display: none;
+}
+
+/* affiche élément output lorsque texte cliquable est activé */
+.clickable-text:active + #output {
+display: block;
+}
+
+/* cache élément showText */
+#showText {
+display: none;
+}

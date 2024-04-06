@@ -1,0 +1,72 @@
+@media (max-width: 640px) {
+	* {
+		header>img {
+            height: 20%;
+            width: 60%;
+            
+        }
+
+        #titre1 {
+            top: 225px;
+            left: 400px;
+            width: 600px;
+        }
+
+
+            /* positionne liens de page1 */
+        #page1 a[href="page1/page1.html"] {
+        position: absolute;
+        top: 300px;
+        left: 400px;
+        width: 200px;
+        }
+        
+        /* positionne liens de page2 */
+        #page2 a[href="page2/page2.html"] {
+        position: absolute;
+        top: 300px;
+        left: 700px;
+        width: 200px;
+        }
+        
+        /* positionne liens de page3 */
+        #page3 a[href="page3/page3.html"] {
+        position: absolute;
+        top: 300px;
+        left: 1000px;
+        width: 200px;
+        }
+
+        .clickable-text {
+            left: 720px;
+            top: 500px;
+        }
+
+        #output {
+            left: 720px;
+            top: 600px;
+            width: 200px;
+
+        } 
+
+        img[src="imgindex/imagejeu.png"] {
+        position: absolute;
+        top: 700px;
+        left: 300px;
+        width: 900px;
+
+        }
+
+        #Block1 {
+            top: 1800px;
+            left: 100px;
+            width: 1200px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        
+
+}
+
+}

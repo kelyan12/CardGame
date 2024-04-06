@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tout.css" />
+    <link rel="stylesheet" href="../css/toutmobile.css" />
+    <link rel="stylesheet" href="page3.css" />
+    <link rel="stylesheet" href="page3mobile.css" />
+    <title>Les problèmes et les solutions</title>
+  </head>
+  <body>
+    <header>
+      <h1><strong>Les problèmes et les solutions</strong></h1>
+    </header>
+
+    <div id="pageAc">
+      <a href="../index.html"><strong>← Aller à la page d'accueil</strong></a>
+    </div>
+
+    <div id="page1">
+      <a href="../page1/page1.html"
+        ><strong>← Les premières explications</strong></a
+      >
+    </div>
+
+    <div id="page2">
+      <a href="../page2/page2.html"
+        ><strong>← Les détails sur les aspects techniques</strong></a
+      >
+    </div>
+
+    <div id="Block1">
+      <h2>Les problèmes techniques</h2>
+      <p>
+        Nous avons rencontré plusieurs problèmes tout au long de ce projet,
+        notamment en ce qui concerne <strong>le chronomètre</strong>. L'objectif
+        était d'afficher le chronomètre de manière précise, en le faisant
+        tourner chaque milliseconde, nous voulions permettre aux utilisateurs de
+        profiter pleinement du jeu simultanément.
+      </p>
+      <p>
+        Nous avons rencontré un problème potentiellement perturbant. Lorsque
+        nous choisissons de retourner deux cartes paires, celles-ci deviennent
+        jaunes et leurs lettres sont révélées, ce qui les rend non
+        sélectionnables. Cependant, le problème survient lorsque nous passons à
+        la suite et décidons de choisir une autre carte. Les cartes paires
+        deviennent alors bleues, et si nous trouvons une autre paire, elles
+        redeviennent jaunes.
+      </p>
+      <p>
+        La bibliothèque Ncurses ne permettait pas d'obtenir l'entrée de
+        l'utilisateur pour une raison indéterminée. Les fonctions
+        <strong>getch()</strong> et <strong>getstr()</strong> ne fonctionnaient
+        pas correctement lorsqu'on tentait de recueillir l'entrée utilisateur
+        pour un nom de 4 caractères. L'utilisation d'une boucle avec
+        <strong>getch()</strong> ou l'utilisation de
+        <strong>getstr()</strong> entraînait une erreur de type "Segmentation
+        Fault".
+      </p>
+    </div>
+
+    <div id="Block2">
+      <h2>Les solutions à nos problèmes</h2>
+
+      <p>
+        Pour <strong>le chronomètre</strong>, nous avons intégré le code dans
+        notre fonction de test, qui gère plusieurs fonctionnalités du jeu. Nous
+        avons réussi à permettre à l'utilisateur de jouer tout en ayant
+        <strong>le chronomètre</strong> en marche simultanément.
+      </p>
+      <p>
+        Ce problème représente une tâche délicate à corriger, car cela rend
+        notre code très complexe. L'utilisation de plusieurs pointeurs et de
+        multi-threading nous incite à éviter de modifier toute la structure du
+        code pour résoudre ce petit problème.
+      </p>
+      <p>
+        En ce qui concerne le problème des cartes qui redeviennent bleues après
+        avoir été trouvées, nous avons testé de nombreuses méthodes qui,
+        malheureusement, n'ont pas fonctionné. Nous avons donc créé une fonction
+        <b>fixcards()</b> qui permet de résoudre partiellement ce bug. Cette
+        fonction redessine les cartes déjà trouvées à plusieurs reprises au sein
+        de la boucle principale.
+      </p>
+      <p>
+        Pour obtenir l'entrée de l'utilisateur, nous avons donc utilisé, le
+        <strong>scanf</strong>, avec <strong>"%4s"</strong> et le
+        <strong>char nom[5]</strong> (le dernier char pour le \0), nous avons
+        mis une limite de 4 caractères.
+      </p>
+    </div>
+
+    <footer><strong>Kelyan, Luan, Oliver</strong></footer>
+  </body>
+</html>

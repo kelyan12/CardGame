@@ -1,0 +1,180 @@
+# depslib dependency file v1.0
+1696240986 source:/home/sk305769/Documents/S1.01/main/main.c
+	<ncurses.h>
+	"tool.h"
+
+1696241302 source:/home/sk305769/Documents/S1.01/main/tool.c
+	"tool.h"
+
+1696240986 /home/sk305769/Documents/S1.01/main/tool.h
+
+1697556740 source:/home/vl301276/Documents/Dev C/SAE 101 18-10/SAE 101/main/main.c
+	<ncurses.h>
+	"tool.h"
+
+1697631521 /home/vl301276/Documents/Dev C/SAE 101 18-10/SAE 101/main/tool.h
+	<ncurses.h>
+
+1697632434 source:/home/vl301276/Documents/Dev C/SAE 101 18-10/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+
+1697556740 source:/home/vl301276/Documents/SAE 101/SAE 101 24-10 V6,5/SAE 101 18-10 V5/SAE 101/main/main.c
+	<ncurses.h>
+	"tool.h"
+
+1697631521 /home/vl301276/Documents/SAE 101/SAE 101 24-10 V6,5/SAE 101 18-10 V5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1699266921 source:/home/vl301276/Documents/SAE 101/SAE 101 24-10 V6,5/SAE 101 18-10 V5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+
+1699870611 source:/home/vl301276/Documents/SAE 101/SAE 101 18-10 V7.5/SAE 101/main/main.c
+	<ncurses.h>
+	"tool.h"
+
+1699870025 /home/vl301276/Documents/SAE 101/SAE 101 18-10 V7.5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1699871868 source:/home/vl301276/Documents/SAE 101/SAE 101 18-10 V7.5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+
+1700477972 source:/home/vl301276/Documents/SAE 101/SAE 101 13-11 V8/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1700475995 /home/vl301276/Documents/SAE 101/SAE 101 13-11 V8/SAE 101/main/tool.h
+	<ncurses.h>
+
+1700478105 source:/home/vl301276/Documents/SAE 101/SAE 101 13-11 V8/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1701082393 source:/home/vl301276/Documents/SAE 101/SAE 101 20-11 V8.5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1701080550 /home/vl301276/Documents/SAE 101/SAE 101 20-11 V8.5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1701080889 source:/home/vl301276/Documents/SAE 101/SAE 101 20-11 V8.5/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1701768246 source:/home/vl301276/Documents/Dev C/SAE 101 27-11 V9 (1).5/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1701768146 /home/vl301276/Documents/Dev C/SAE 101 27-11 V9 (1).5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1701768282 source:/home/vl301276/Documents/Dev C/SAE 101 27-11 V9 (1).5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1701768246 source:/home/vl301276/Documents/Dev C/SAE 101 05-12 V12/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1701768146 /home/vl301276/Documents/Dev C/SAE 101 05-12 V12/SAE 101/main/tool.h
+	<ncurses.h>
+
+1701768997 source:/home/vl301276/Documents/Dev C/SAE 101 05-12 V12/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1702279077 source:/home/vl301276/Documents/Dev C/SAE 101 05-12 V12.5/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1702279100 /home/vl301276/Documents/Dev C/SAE 101 05-12 V12.5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1702279546 source:/home/vl301276/Documents/Dev C/SAE 101 05-12 V12.5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1702279782 source:/home/vl301276/Documents/Dev C/SAE 101 11-12 V14.5/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1702279100 /home/vl301276/Documents/Dev C/SAE 101 11-12 V14.5/SAE 101/main/tool.h
+	<ncurses.h>
+
+1702280913 source:/home/vl301276/Documents/Dev C/SAE 101 11-12 V14.5/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1702890824 source:/home/vl301276/Documents/Dev C/SAE 101 18-12 V17/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1702890824 /home/vl301276/Documents/Dev C/SAE 101 18-12 V17/SAE 101/main/tool.h
+	<ncurses.h>
+
+1702892664 source:/home/vl301276/Documents/Dev C/SAE 101 18-12 V17/SAE 101/main/tool.c
+	"tool.h"
+	<ncurses.h>
+	<unistd.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1702890824 source:/home/vl301276/Documents/Dev C/SAE 101 18-12 V18/SAE 101/main/main.c
+	<ncurses.h>
+	<stdio.h>
+	<stdlib.h>
+	"tool.h"
+
+1702890824 /home/vl301276/Documents/Dev C/SAE 101 18-12 V18/SAE 101/main/tool.h
+	<ncurses.h>
+

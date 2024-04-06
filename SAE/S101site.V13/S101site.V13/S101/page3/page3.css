@@ -1,0 +1,75 @@
+/* style spécifique pour l'élément avec l'ID Block1 : position absolue, bloc en ligne avec marge interne, couleur de fond noire, bordure en pointillés, couleur de texte blanche, largeur et hauteur définies */
+#Block1 {
+  left: 30px;
+  top: 215px;
+  position: absolute;
+  display: inline-block;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #000000;
+  border-style: dashed;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 800px;
+  height: 500px;
+}
+
+/* style spécifique pour l'élément avec l'ID Bloc2 : position absolue, bloc en ligne avec marge interne, couleur de fond noire, bordure en pointillés, couleur de texte blanche, largeur et hauteur ajustées */
+#Block2 {
+  left: 950px;
+  top: 215px;
+  position: absolute;
+  display: inline-block;
+  padding: 20px;
+  background-color: #000000;
+  border-style: dashed;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 800px;
+  height: 550px;
+}
+
+/* ajoute un pseudo élément après le corps de la page,couvrant toute la vue avec un fond en dégradé linéaire, sans interaction possible */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+  );
+  pointer-events: none;
+}
+
+/* change la couleur de fond et supprime l'ombre du texte lors de la sélection de texte */
+::selection {
+    background: #0080FF;
+}
+
+/* style spécifique pour les liens dans l'élément avec l'ID page1 pointant vers " ../page1/page1.html" : position absolue, couleur et position définies */
+#page1 a[href="../page1/page1.html"] {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
+
+/* style spécifique pour les liens dans l'élément avec l'iD page2 pointant vers "../page2/page2.html" : position absolue, couleur et position définies */
+#page2 a[href="../page2/page2.html"] {
+  position: absolute;
+  top: 820px;
+  left: 30px;
+}
+
+/* style spécifique pour les liens dans l'élément avec l'ID pageAc pointant vers "../index.html" : position absolue, couleur de texte rouge , position définies */
+#pageAc a[href="../index.html"] {
+  position: absolute;
+  color: rgb(255, 9, 9);
+  top: 30px;
+  left: 30px;
+}
