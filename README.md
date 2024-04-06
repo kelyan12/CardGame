@@ -10,3 +10,5 @@ are shuffled and laid face down on a surface. Players take it in turns
 turn over two cards at a time, looking for matching pairs.
 matching pairs. The aim is to memorise the location of the
 and make as many pairs as possible.
+
+The Website and the game is in French.
